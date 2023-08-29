@@ -1,0 +1,20 @@
+# Copyright (c) 2023 Siemens AG
+# SPDX-License-Identifier: MIT
+apiVersion: 1
+
+datasources:
+  - name: Postgresql
+    type: postgres
+    url: postgresql:5432
+    database: srcuserlog
+    sslmode: disable
+    user: postgres
+    isDefault: true
+    editable: true
+    jsonData:
+      sslmode: disable
+      postgresVersion: 1200
+    secureJsonData:
+      password: postgres
+
+    

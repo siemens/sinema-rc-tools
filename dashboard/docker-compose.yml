@@ -1,0 +1,92 @@
+# Copyright (c) 2023 Siemens AG
+# SPDX-License-Identifier: MIT
+version: '2.4'
+#### Services ####
+services:
+
+  #### Python Userlog App ####
+  python-userlog-app:
+    build:
+      context: ./src/python-userlog-app
+    image: ./src/python-userlog-app:latest
+    restart: always
+    depends_on: 
+      - postgresql
+    networks:
+      - app-net
+    volumes:
+      - './cfg-data/:/cfg-data/'
+    environment:
+      ### ↓↓↓ Enter your SINEMA RC Server credentials here ↓↓↓ ###
+      - SRC_ADDRESS=my.sinemarc.server
+      - SRC_PORTS=443
+      - SRC_USER=username
+      - SRC_PASSWORD=
+      ### ↑↑↑ Enter your SINEMA RC Server credentials here ↑↑↑ ###
+      ### !!! For secure usage of passwords please refer to    ###
+      ### !!! https://docs.docker.com/compose/use-secrets/     ###
+      - DATABASE_HOST=postgresql
+      - DATABASE=srcuserlog
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=
+
+    mem_limit: 100mb
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  #### Postgresql ####
+  postgresql:
+    image: postgres:alpine
+    restart: always
+    volumes: 
+      - data-storage:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=
+      - POSTGRES_DB=srcuserlog
+    networks:
+      - app-net
+    mem_limit: 250mb
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    
+
+  #### Dashboard and Operation Grafana ####
+  grafana:
+    build:
+      context: ./src/grafana
+    image: grafana
+    restart: always
+    depends_on: 
+      - postgresql
+      - python-userlog-app
+    volumes: 
+      - dashboard-storage:/var/lib/grafana
+    networks:
+      - app-net
+    ports:
+      - "3000:3000"
+    mem_limit: 100mb
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+#### Volumes ####
+volumes: 
+  data-storage:
+    name: data-storage
+  dashboard-storage:
+    name: dashboard-storage
+
+#### Network ####
+networks:
+  app-net:
+    name: app-net

@@ -13,11 +13,11 @@ COPY . src_api/
 RUN apt update && apt install -y --no-install-recommends \
     libexpat1-dev \
     libffi-dev; \  
-    python3 -m pip install --upgrade pip --no-cache-dir;
+    python3 -m pip install --upgrade pip --no-cache-dir; \
+    pip3 install sinemarc-api;
 
 
-#Install latest src libary
-RUN pip3 install ./src_api/ --no-cache-dir;
+
 
 
 

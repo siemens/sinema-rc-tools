@@ -5,12 +5,16 @@
 [Example](./index.md#example) /
 Postgresdb Example
 
-> Auto-generated documentation for [sinemarc_api.example.postgresDB_example](../../../sinemarc_api/example/postgresDB_example.py) module.
+This will push user log to postgres with these given arguments
+Example script, which will poll the user log every 60s and update the defined database
 
 #### Attributes
+- '-a', '--addr' Address of SINEMA RC Server
+- '-po', '--port' Address port of SINEMA RC Server default=443
+- '-u', '--user' User name SINEMA RC Server
+- '-pass', '--password' User password of SINEMA RC Server
+- '-dh', '--databasehost' Hostname of database default=localhost
+- '-db', '--database' Hostname of database default=srcexample
+- '-du', '--databaseuser' Username for database default=user
+- '-dp', '--databasepass' Passphrase for database default=user
 
-- `parser` - Example
-  This will push user log to postgres: `argparse.ArgumentParser(description='Example script, which will poll the user log every 60s and update the defined database')`
-
-- `src_client` - 1. Connect to RC server: `src_api(args.addr, port=args.port, username=args.user, password=args.password)`
-- [Postgresdb Example](#postgresdb-example)

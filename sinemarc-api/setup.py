@@ -27,7 +27,7 @@ except ImportError:
     from distutils.core import setup
 
 CLASSIFIERS = [
-    'Development Status :: 4 - Beta',
+    'Development Status :: 5 - Production/Stable',
     'Environment :: Console',
     'Intended Audience :: Developers',
     'License :: Other/Proprietary License',
@@ -41,7 +41,7 @@ setup(
     name="sinemarc-api",
     version="1.2",
     author="SIEMENS Support",
-    author_email="support@siemen.com",
+    author_email="support@siemens.com",
     description='Lib to use the SINEMA RC API',
     keywords='network, sinemarc',
     url='',

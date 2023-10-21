@@ -3,3 +3,4 @@ build/*
 sinemarc_api.*
 .vscode/launch.json
 sinemarc_api/example/srcapi_example.py
+sinemarc_api.egg-info/*

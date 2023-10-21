@@ -26,13 +26,13 @@ The SINEMA-RC support tooling is distributed under the [MIT License](LICENSE).
 Copyright (c) 2023 Siemens AG
 
 ## Documentation
-- [Sinemarc Api](sinemarc_api/index.md#sinemarc-api)
-    - [Example](sinemarc_api/example/index.md#example)
-        - [Module](sinemarc_api/example/module.md#module)
-        - [Influxdb Example](sinemarc_api/example/influxDB_example.md#influxdb-example)
-        - [Postgresdb Example](sinemarc_api/example/postgresDB_example.md#postgresdb-example)
-    - [Lib](sinemarc_api/lib/index.md#lib)
-        - [Definitions](sinemarc_api/lib/definitions.md#definitions)
-        - [Exception Definition](sinemarc_api/lib/exception_definition.md#exception-definition)
-        - [Srcapi Core](sinemarc_api/lib/srcapi_core.md#srcapi-core)
+- [Sinemarc Api](sinemarc-api/docs/sinemarc_api/index.md#sinemarc-api)
+    - [Example](sinemarc-api/docs/sinemarc_api/example/index.md#example)
+        - [Module](sinemarc-api/docs/sinemarc_api/example/module.md#module)
+        - [Influxdb Example](sinemarc-api/docs/sinemarc_api/example/influxDB_example.md#influxdb-example)
+        - [Postgresdb Example](sinemarc-api/docs/sinemarc_api/example/postgresDB_example.md#postgresdb-example)
+    - [Lib](sinemarc-api/docs/sinemarc_api/lib/index.md#lib)
+        - [Definitions](sinemarc-api/docs/sinemarc_api/lib/definitions.md#definitions)
+        - [Exception Definition](sinemarc-api/docs/sinemarc_api/lib/exception_definition.md#exception-definition)
+        - [Srcapi Core](sinemarc-api/docs/sinemarc_api/lib/srcapi_core.md#srcapi-core)
 

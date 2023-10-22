@@ -28,8 +28,6 @@ Copyright (c) 2023 Siemens AG
 ## Documentation
 - [Sinemarc Api](sinemarc-api/docs/sinemarc_api/index.md#sinemarc-api)
     - [Example](sinemarc-api/docs/sinemarc_api/example/index.md#example)
-        - [Module](sinemarc-api/docs/sinemarc_api/example/module.md#module)
-        - [Influxdb Example](sinemarc-api/docs/sinemarc_api/example/influxDB_example.md#influxdb-example)
         - [Postgresdb Example](sinemarc-api/docs/sinemarc_api/example/postgresDB_example.md#postgresdb-example)
     - [Lib](sinemarc-api/docs/sinemarc_api/lib/index.md#lib)
         - [Exception Definition](sinemarc-api/docs/sinemarc_api/lib/exception_definition.md#exception-definition)

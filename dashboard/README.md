@@ -4,7 +4,7 @@
 
 Visualize your SINEMA RC Server Userlog-Data externally on a dashboard!
 
-![plot](/images/SRC-Dashboard-Overview.png)
+![plot](/dashboard/images/SRC-Dashboard-Overview.png)
 
 This docker compose starts three containers:
 - Python3 Container
@@ -28,6 +28,6 @@ For visualizing the data there is the Grafana Container with a preprovisioned Da
 1. Clone the repository to your device.
 2. Change SINEMA RC Server login credentials in docker-compose.yml
     2.1 Those credentials are the username and password of the sinema rc server at line 22 and 23
-    2.2 Also the login for the postgres database should be defined in the docker-compose at line 31 and 48. In addition in the grafana [datasources](/src/grafana/datasources/postgresql.yaml) the password should also be set. There it is line 18.
+    2.2 Also the login for the postgres database should be defined in the docker-compose at line 31 and 48. In addition in the grafana [datasources](/dashboard/src/grafana/datasources/postgresql.yaml) the password should also be set. There it is line 18.
 
 3. Run docker-compose up -d --build

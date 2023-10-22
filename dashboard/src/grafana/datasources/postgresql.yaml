@@ -15,6 +15,6 @@ datasources:
       sslmode: disable
       postgresVersion: 1200
     secureJsonData:
-      password: postgres
+      password: 
 
     

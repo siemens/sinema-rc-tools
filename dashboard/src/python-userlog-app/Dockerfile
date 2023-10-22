@@ -11,8 +11,8 @@ RUN chmod +x ./start.sh;
 
 #Install latest src libary
 RUN pip3 install psycopg2-binary; \
-    pip3 install sinemarc-api; \
-    pip3 install ./src_api/ --no-cache-dir;
+    pip3 install sinemarc-api; 
+
     
 
 CMD ["/bin/bash", "./start.sh"]

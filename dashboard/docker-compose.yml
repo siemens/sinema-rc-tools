@@ -8,7 +8,7 @@ services:
   python-userlog-app:
     build:
       context: ./src/python-userlog-app
-    image: ./src/python-userlog-app:latest
+    image: python-userlog-app
     restart: always
     depends_on: 
       - postgresql

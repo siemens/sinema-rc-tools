@@ -1,8 +1,6 @@
 # Srcapi Core
 
-[Sinemarc-api Index](../../README.md#sinemarc-api-index) /
 [Sinemarc Api](../index.md#sinemarc-api) /
-[Lib](./index.md#lib) /
 Srcapi Core
 
 

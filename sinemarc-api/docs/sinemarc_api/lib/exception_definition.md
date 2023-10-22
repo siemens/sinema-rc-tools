@@ -1,8 +1,6 @@
 # Exception Definition
 
-[Sinemarc-api Index](../../README.md#sinemarc-api-index) /
 [Sinemarc Api](../index.md#sinemarc-api) /
-[Lib](./index.md#lib) /
 Exception Definition
 
 

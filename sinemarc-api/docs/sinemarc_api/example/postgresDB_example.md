@@ -1,8 +1,6 @@
 # Postgresdb Example
 
-[Sinemarc-api Index](../../README.md#sinemarc-api-index) /
 [Sinemarc Api](../index.md#sinemarc-api) /
-[Example](./index.md#example) /
 Postgresdb Example
 
 This will push user log to postgres with these given arguments

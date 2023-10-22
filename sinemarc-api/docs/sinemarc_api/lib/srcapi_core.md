@@ -5,7 +5,7 @@
 [Lib](./index.md#lib) /
 Srcapi Core
 
-> Auto-generated documentation for [sinemarc_api.lib.srcapi_core](../../../sinemarc_api/lib/srcapi_core.py) module.
+
 
 - [Srcapi Core](#srcapi-core)
   - [src_api](#src_api)
@@ -77,21 +77,18 @@ Srcapi Core
 ## src_api
 
 [Show source in srcapi_core.py:27](../../../sinemarc_api/lib/srcapi_core.py#L27)
+Create the connection object. With the created instance the API will then take care of the access token
 
-#### Signature
+#### Arguments
 
-```python
-class src_api:
-    def __init__(
-        self,
-        address,
-        port=443,
-        username="admin",
-        password="admin",
-        timeout=500,
-        verify_certificate=False,
-    ): ...
-```
+
+- `address` *String* - Address of the SINEMA RC Server
+- `port` *Integer, optional* - Webserver Port of the SINEMA RC Server. Defaults to 443
+- `username` *String* - Username. Defaults to admin
+- `password` *String* - Password. Defaults to admin
+- `timeout` *Integer* - Timeout for the rest-requests, Defaults to 500,
+- `verify_certificate` *Boolean, optional* - Whether the certificate of the server should be validated, as signed and valid certificate. Defaults to False
+
 
 ### src_api().activate_license
 

@@ -19,6 +19,8 @@ To visualize the current state of SINEMA RC we provide ressources in the
 ```dashboard``` folder which simplifies the integration of SINEMA RC
 into [Grafana](https://grafana.com/).
 
+How to use and start the dashboard ist described [here](dashboard/README.md)
+
 ## Licensing
 
 The SINEMA-RC support tooling is distributed under the [MIT License](LICENSE).

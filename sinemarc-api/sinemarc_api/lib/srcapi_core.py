@@ -1450,7 +1450,7 @@ class src_api:
         Returns:
             Json: Result
         """
-        json = {'username': self.username, 'password':self.password}
+        json = {'username': self.username, 'password':self.password, 'loginType': 1}
         path = TOKEN_PATH
         request_result = None
         try:
@@ -1462,6 +1462,7 @@ class src_api:
                                                  verify=self.verify_certificate,
                                                  headers=headers)
         except Exception as ex:
+            print(json)
             logging.error('Exception:{}'.format(ex))
 
         if request_result:

@@ -1450,7 +1450,7 @@ class src_api:
         Returns:
             Json: Result
         """
-        json = {'username': self.username, 'password':self.password, 'loginType': 1}
+        json = {'username': self.username, 'password':self.password, 'loginType': LoginType_Mapping['password']}
         path = TOKEN_PATH
         request_result = None
         try:

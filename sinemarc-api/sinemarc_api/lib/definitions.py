@@ -162,3 +162,8 @@ Connection_typ_mapping = {
 'digital_input_wake_up_sms':5
 }
 
+LoginType_Mapping = {
+
+    'password' : 1,
+    'pki' : 2
+}

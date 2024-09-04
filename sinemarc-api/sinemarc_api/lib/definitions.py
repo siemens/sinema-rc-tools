@@ -41,6 +41,109 @@ SET_DNS = '/system/network/dns'
 GET_LICENSE_INFO = '/system/license'
 ACTIVATE_LICENSE = '/system/license/activate'
 
+# Introduced with V3.2
+GET_SHOW_TICKET_NUMBER_STATUS = '/system/license/showticketnumbers'
+UPDATE_SHOW_TICKET_NUMBER_STATUS = '/system/license/showticketnumbers'
+RESET_LICENSE_CONTAINER = '/system/license/reset_license_system'
+REACTIVATE_LICENSE = 'system/license/retry_activate'
+MANAGE_LICENSES = 'system/license/manage'
+GET_USER_CLIENT_LICENSE_LIST = 'system/license/clients'
+GET_USER_CLIENT_LICENSE_DETAILS = 'system/license/clients/{}'
+DELETE_USER_CLIENT_LICENSE_FROM_LIST = '/system/license/clients/{}'
+GET_FLOATING_LIST = '/system/license/clients/floating'
+ASSIGN_TO_STANDARD_LICENSE = '/system/license/clients/floating/{}'
+GET_USER_CLIENT_FLOATING_DETAILS = '"/system/license/clients/floating/{}'
+GET_HISTORY_LIST = '/system/license/clients/floating/history'
+ASSIGN_TO_STANDARD_LICENSE = '/system/license/clients/floating/history/{}'
+GET_USER_CLIENT_HISTORY_DETAILS = '/system/license/clients/floating/history/{}'
+GET_EDGE_CLIENT_LICENSE_LIST = '/system/license/edgeclients'
+GET_EDGE_CLIENT_LICENSE_DETAILS = '/system/license/edgeclients/{}'
+DELETE_EDGE_CLIENT_LICENSE_FROM_LIST = '/system/license/edgeclients/{}'
+GET_DEVICE_LICENSE_LIST = '/system/license/devices'
+GET_DEVICE_LICENSE_DETAILS = '/system/license/devices/{}'
+DELETE_DEVICE_LICENSE_FROM_LIST = '/system/license/devices/{}'
+ACTIVATE_BACKUP_RESTORE = '/system/backup/{}'
+GET_RESTORE_STATUS = '/system/backup/{}/status'
+GET_THE_VALUES_OF_THE_PASSWORD_POLICY_SETTINGS= '/security/general/passwordpolicy' 
+CHANGE_PASSWORD_POLICY_SETTINGS= '/security/general/passwordpolicy' 
+GET_THE_VALUES_OF_THE_BRUTE_FORCE_SETTINGS= '/security/general/bruteforceprevention' 
+CHANGE_BRUTE_FORCE_SETTINGS= '/security/general/bruteforceprevention' 
+RENEW_FALLBACK_CERTIFICATE= '/security/certificates/fallback' 
+GET_FALLBACK_CERTIFICATE_DETAILS= '/security/certificates/fallback' 
+IMPORT_UMC_CA= '/security/umc/ca' 
+DELETE_UMC_CA= '/security/umc/ca/<ID>'	 
+GET_ALL_UMC_CA= '/security/umc/ca' 
+GET_DETAILS_OF_UMC_CA_CERTIFICATE= '/security/umc/ca/<ID>'	 
+IMPORT_UMC_CERTIFICATE= '/security/umc/certificate' 
+DELETE_UMC_CERTIFICATE= '/security/umc/certificate/<ID>'	 
+GET_ALL_UMC_CERTIFICATES= '/security/umc/certificate' 
+EDIT_UPLOAD_SERVER_SETTINGS= '/services/uploadsettings' 
+GET_SNMP_SETTINGS= '/services/snmpsettings' 
+REMOVE_SNMP_SETTINGS= '/services/snmpsettings' 
+EDIT_USER= '/accounts/users/<ID>'	 
+GET_USER= '/accounts/users/<ID>'	 
+EDIT_ROLE= '/accounts/roles/<ID>'	 
+GET_VXLAN_DEVICES= '/vxlan/devices' 
+GET_VXLAN_DEVICE= '/vxlan/devices/<ID>'	 
+START_DCP_DISCOVERY_FOR_THE_DEVICE= '/vxlan/devices' 
+GET_ALLOWED_COMMUNICATION_NODES_OF_THE_DEVICE= '/vxlan/devices/communicationnodes?deviceId={integer}'	 
+DELETE_ALLOWED_NODE_OF_THE_DEVICE= '/vxlan/devices/communicationnodes' 
+GET_ALL_DISCOVERED_NODES_OF_THE_DEVICE= '/vxlan/devices/foundnodes?deviceId={integer}'	 
+ADD_MANUAL_NODE_TO_ALLOWED_COMMUNICATION_TABLE= '/vxlan/devices/foundnodes' 
+GET_VXLAN_SETTINGS= '/vxlan/settings' 
+SET_VXLAN_SETTINGS= '/vxlan/settings' 
+EDIT_VXLAN_SETTINGS= '/vxlan/settings' 
+GET_VXLAN_BRIDGES= '/vxlan/layer_networks' 
+GET_VXLAN_BRIDGE_DETAILS= '/vxlan/layer_networks/<ID>'	 
+ADD_VXLAN_BRIDGE= '/vxlan/layer_networks' 
+DELETE_VXLAN_BRIDGE= '/vxlan/layer_networks/<ID>'	 
+EDIT_GROUP= '/connections/groups/<ID>'	 
+EDIT_NODE_OF_THE_LOCAL_CONNECTIONS_SUBNET_NODE= '/localconnections/connections/subnets/nodes/<ID>'	 
+ADD_DEVICE_ACCESS_GROUP_TO_DEVICE= '/connections/devices/deviceaccess/groups' 
+REMOVE_DEVICE_ACCESS_GROUP_OF_DEVICE= '/connections/devices/deviceaccess/groups' 
+EDIT_SUBNET_OF_THE_DEVICE= '/connections/devices/subnets/<ID>'	 
+ADD_PORT_GROUP_TO_SUBNET= '/connections/devices/subnets/portgroups' 
+GET_ALL_PORT_GROUPS_OF_A_SUBNET= '/connections/devices/subnets/portgroups?subnetId={integer_value}'	 
+GET_PORT_GROUP_OF_A_SUBNET= '/connections/devices/subnets/portgroups/<ID>'	 
+EDIT_PORT_GROUP_NAME= '/connections/devices/subnets/portgroups/<ID>'	 
+REMOVE_PORT_GROUP_FROM_SUBNET= '/connections/devices/subnets/portgroups/<ID>'	 
+ADD_PORT_TO_PORT_GROUP_OF_SUBNET= '/connections/devices/subnets/portgroups/ports' 
+REMOVE_PORT_FROM_PORT_GROUP_OF_SUBNET= '/connections/devices/subnets/portgroups/ports' 
+GET_ALL_PARTICIPANT_GROUPS_OF_PORT_GROUP= '/connections/devices/subnets/portgroups/groups?portgroupId={integer_value}'	 
+ADD_PARTICIPANT_GROUPS_TO_PORT_GROUP_OF_SUBNET= '/connections/devices/subnets/portgroups/groups' 
+REMOVE_PARTICIPANT_GROUP_FROM_PORT_GROUP_OF_SUBNET= '/connections/devices/subnets/portgroups/groups' 
+EDIT_NODE_OF_THE_SUBNET= '/connections/devices/subnets/nodes/<ID>'	 
+ADD_PORT_GROUP_TO_NODE= '/connections/devices/subnets/nodes/portgroups' 
+GET_ALL_PORT_GROUPS_OF_A_NODE= '/connections/devices/subnets/nodes/portgroups?nodeId={integer_value}'	 
+GET_PORT_GROUP_OF_A_NODE= '/connections/devices/subnets/nodes/portgroups/<ID>'	 
+EDIT_PORT_GROUP_NAME= '/connections/devices/subnets/nodes/portgroups/<ID>'	 
+REMOVE_PORT_GROUP_FROM_NODE= '/connections/devices/subnets/nodes/portgroups/<ID>'	 
+ADD_PORT_TO_PORT_GROUP_OF_NODE= '/connections/devices/subnets/nodes/portgroups/ports' 
+REMOVE_PORT_FROM_PORT_GROUP_OF_NODE= '/connections/devices/subnets/nodes/portgroups/ports' 
+GET_ALL_PARTICIPANT_GROUPS_OF_PORT_GROUP= '/connections/devices/subnets/nodes/portgroups/groups?portgroupId={integer_value}'	 
+ADD_PARTICIPANT_GROUPS_TO_PORT_GROUP_OF_NODE= '/connections/devices/subnets/nodes/portgroups/groups' 
+REMOVE_PARTICIPANT_GROUP_FROM_PORT_GROUP_OF_NODE= '/connections/devices/subnets/nodes/portgroups/groups' 
+EDIT_DEVICE= '/connections/devices/<ID>'	 
+GET_DEVICE= '/connections/devices/<ID>'	 
+GET_SERVER_OVERVIEW= '/system/overview'
+GET_DNS_SETTINGS= '/system/network/dns' 
+SET_WEBSERVER_CONFIGURATION= '/system/network/webserver' 
+EDIT_VIRTUAL_SUBNET_ADDRESS_SPACE_SETTINGS= '/system/vpnaddressspace/virtualsubnetsettings' 
+EDIT_OPENVPN_ADDRESS_SPACE_SETTINGS= '/system/vpnaddressspace/openvpn' 
+EDIT_OPENVPN_ADDRESS_SPACE_SETTINGS= '/system/vpnaddressspace
+EDIT_SMS_GATEWAY_PROVIDER= '/system/smsandemail/sms/<ID>'	 
+GET_A_TOKEN_TO_RESET_FACTORY_SETTINGS= '/system/timebasedsystemtoken' 
+RESETTING_THE_SYSTEM_TO_FACTORY_SETTINGS_USING_A_SUPER_ADMIN_PASSWORD = '/system/settings/factoryreset' 
+
+
+
+
+
+
+
+
+
+
 
 INIT_SERVER = '/system/init'
 
@@ -162,3 +265,8 @@ Connection_typ_mapping = {
 'digital_input_wake_up_sms':5
 }
 
+LoginType_Mapping = {
+
+    'password' : 1,
+    'pki' : 2
+}
